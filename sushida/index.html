@@ -7,14 +7,15 @@
 </head>
 <body>
     <h1>寿司打スコア変換</h1>
+    <span style="color: #ff0000">不正な値が検出されました</span>
     <form action="./result.html" method="GET" id="inputform">
-        <select id="course">
+        <select name="course">
             <option disabled selected value="">コースを選択して下さい
             <option value="30">お手軽3,000円コース
             <option value="50">お勧め5,000円コース
             <option value="100">高級10,000円コース</option>
         </select>
-        <select id="course">
+        <select name="difficulty">
             <option disabled selected value="">難易度を選択して下さい
             <option value="1">練習
             <option value="2">普通
@@ -22,6 +23,7 @@
             <option value="4">速度必須
             <option value="7">一発勝負</option>
         </select>
+
     </form>
 </body>
 </html>
