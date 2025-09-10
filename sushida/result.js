@@ -12,5 +12,5 @@ const [course, difficulty, profit, average, miss, ranking] =
       [Number(params.get("course")),Number(params.get("difficulty")),Number(params.get("profit")),
        Number(params.get("average")),Number(params.get("miss")),10001 - Number(params.get("ranking"))];
 
-const score = 0;
+const score = course * difficulty * Math.abs( (average - miss) + ranking + profit);
 resultElm.insertAdjacentText("beforeend", score.toLocaleString());
