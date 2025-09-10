@@ -3,11 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="/all.css">
+    <style>.hidden{ display: none; }</style>
+    <script defer> if (new URLSearchParams(location.search).has("error")) {document.getElementById("error").style.display = "block";} </script>
     <title>寿司打スコア変換</title>
 </head>
 <body>
     <h1>寿司打スコア変換</h1>
-    <span style="color: #ff0000">不正な値が検出されました</span>
+    <span style="color: #ff0000" class="hidden" id="error">不正な値が検出されました</span>
     <form action="./result.html" method="GET" id="inputform">
         <label>
             コース: 
@@ -31,7 +33,7 @@
         </label>
         <label>
             損得: 
-            <input name="profit" value="0" type="number" min="-10000" max="10000" placeholder="損得を入力してください" required>
+            <input name="profit" value="0" type="number" min="-10000" step="100" max="10000" placeholder="損得を入力してください" required>
             円
         </label>
         <label>
@@ -44,7 +46,7 @@
             <input name="miss" value="0" type="number" min="0" max="100" placeholder="ミスタイプ数を入力してください">
         </label>
         <label>
-            ランキング順位(表示されていない場合-1): 
+            ランキング順位(表示されていない場合は-1): 
             <input name="ranking" value="5000" type="number" min="-1" max="10000" placeholder="ランキング順位を入力してください">
         </label>
     </form>
