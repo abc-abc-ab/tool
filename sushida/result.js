@@ -8,3 +8,4 @@ for ([k, v] in params){
 console.groupEnd("URLSearchParams")
 
 
+document.createElement("a")
