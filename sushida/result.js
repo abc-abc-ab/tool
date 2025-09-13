@@ -1,4 +1,4 @@
-const params = new URLSearchParams(location.search), //js
+const params = new URLSearchParams(location.search), //Javascript
 resultElm = document.getElementById("result");
 
 if (!params.has("course")) { history.replaceState(null, "", "./index.html") }
