@@ -3,7 +3,7 @@ resultElm = document.getElementById("result");
 
 
 console.groupCollapsed("URLSearchParams")
-for (let [key, value] in params.entries()){
+for (let [key, value] of params.entries()){
     console.log(`${key}: ${value}`)
 }
 console.groupEnd("URLSearchParams")
@@ -17,5 +17,5 @@ if (!isNaN(score)){
     history.replaceState(null, "", "./result.html")
     resultElm.insertAdjacentText("beforeend", score.toLocaleString());
 }else{
-    document.location.href = "./index.html?error=NaN"
+    document.location.href = "./index.html?error=NaN";
 }
