@@ -3,8 +3,8 @@ resultElm = document.getElementById("result");
 
 
 console.groupCollapsed("URLSearchParams")
-for (const [k, v] in params){
-    console.log(`${k}: ${v}`)
+for (let [key, value] in params.entries()){
+    console.log(`${key}: ${value}`)
 }
 console.groupEnd("URLSearchParams")
 
