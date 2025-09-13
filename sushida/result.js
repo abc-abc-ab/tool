@@ -17,7 +17,7 @@ if (!IsInvalid){
     history.replaceState(null, "", "./result.html")
     resultElm.insertAdjacentText("beforeend", score.toLocaleString());
 }else{
-    window.setTimeout(()=>{document.location.href = "./index.html?error=NaN";}, 3000)
+    window.setTimeout(()=>{document.location.href = "./index.html?error";}, 3000)
 }
 
 function IsInvalid(){
