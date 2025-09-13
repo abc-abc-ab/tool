@@ -17,16 +17,16 @@ if (!IsInvalid){
     history.replaceState(null, "", "./result.html")
     resultElm.insertAdjacentText("beforeend", score.toLocaleString());
 }else{
-    document.location.href = "./index.html?error=NaN";
+    window.setTimeout(()=>{document.location.href = "./index.html?error=NaN";}, 3000)
 }
 
 function IsInvalid(){
     let result = false;
-    if (0 > (  100 * course  + profit )) {result = true;}
-    else if (profit % 10) {result = true;}
-    else if (10002 < ranking || 1 > ranking) {result = true;}
-    else if (!/30|50|100/.test(course)) {result = true;}
-    else if (!/1|2|3|4|7/.test(difficulty)) {result = true;}
-    else if (0 >= score) {result = true;}
+    if (0 > (  100 * course  + profit )) {result = true;console.log("a");}
+    else if (profit % 10) {result = true;console.log("b");}
+    else if (10002 < ranking || 1 > ranking) {result = true;console.log("c");}
+    else if (!/30|50|100/.test(course)) {result = true;console.log("d");}
+    else if (!/1|2|3|4|7/.test(difficulty)) {result = true;console.log("e");}
+    else if (0 >= score) {result = true;console.log("f");}
     return result;
 }
