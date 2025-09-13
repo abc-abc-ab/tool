@@ -28,7 +28,6 @@ if (IsInvalid()) { document.location.href = "./index.html?error"; }
 	    ③ 損益: 損-③ 得+③ / ④ 平均タイプ数: ④*60 (回/分) / ⑤ ミス数: そのまま /<br>
 	    ⑥ 順位: 損-1 得10,001 - ⑥ ( | ~ | は絶対値 )<br>
         <span style="font-weight: bold;">式) ${course}(①) * ${difficulty}(②) * | (${average}(④) - ${miss}(⑤)) + ${ranking}(⑥) + ${profit}(③) |</span>`
-        
     )
     resultElm.insertAdjacentText("beforeend", score.toLocaleString());
 }
