@@ -22,11 +22,11 @@ if (!IsInvalid){
 
 function IsInvalid(){
     let result = false;
-    if (0 > (  100 * course  + profit )) {result = true;console.log("a");}
-    else if (profit % 10) {result = true;console.log("b");}
-    else if (10002 < ranking || 1 > ranking) {result = true;console.log("c");}
-    else if (!/30|50|100/.test(course)) {result = true;console.log("d");}
-    else if (!/1|2|3|4|7/.test(difficulty)) {result = true;console.log("e");}
-    else if (0 >= score) {result = true;console.log("f");}
+    if (0 > (  100 * course  + profit )) {result = true;alert("a");}
+    else if (profit % 10) {result = true;alert("b");}
+    else if (10002 < ranking || 1 > ranking) {result = true;alert("c");}
+    else if (!/30|50|100/.test(course)) {result = true;alert("d");}
+    else if (!/1|2|3|4|7/.test(difficulty)) {result = true;alert("e");}
+    else if (0 >= score) {result = true;alert("f");}
     return result;
 }
