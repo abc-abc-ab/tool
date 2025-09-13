@@ -14,7 +14,7 @@ const [course, difficulty, profit, average, miss, ranking] =
 
 const score = course * difficulty * Math.abs( (average - miss) + ranking + profit);
 if (!isNaN(score)){
-    history.replaceState("./result.html")
+    history.replaceState(null, "", "./result.html")
     resultElm.insertAdjacentText("beforeend", score.toLocaleString());
 }else{
     document.location.href = "./index.html?error=NaN"
