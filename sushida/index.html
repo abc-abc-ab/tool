@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="/all.css">
     <style>.hidden{ display: none; }</style>
-    <script defer> if (new URLSearchParams(location.search).has("error")) {document.getElementById("error").style.display = "block";} </script>
+    <script defer> if (new URLSearchParams(location.search).has("error")) {document.getElementById("error").style.display = "block";} history.replaceState("./index.html");</script>
     <title>寿司打スコア変換</title>
 </head>
 <body>
@@ -33,7 +33,7 @@
         </label>
         <label>
             損益: 
-            <input name="profit" value="0" type="number" min="-10000" step="100" max="40000" placeholder="損益を入力してください" required>
+            <input name="profit" value="0" type="number" min="-10000" step="10" max="40000" placeholder="損益を入力してください" required>
             円
         </label>
         <label>
