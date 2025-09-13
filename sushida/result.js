@@ -13,7 +13,7 @@ const [course, difficulty, profit, average, miss, ranking] =
        Number(params.get("average")), Number(params.get("miss")), 10001 - Number(params.get("ranking"))];
 
 const score = course * difficulty * Math.abs( (average - miss) + ranking + profit);
-if (!IsInvalid){
+if (!IsInvalid()){
     history.replaceState(null, "", "./result.html")
     resultElm.insertAdjacentText("beforeend", score.toLocaleString());
 }else{
