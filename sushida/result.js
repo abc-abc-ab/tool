@@ -1,4 +1,4 @@
-const params = new URLSearchParams(location.search), //JS
+const params = new URLSearchParams(location.search), //Javascript
 resultElm = document.getElementById("result"),
 outputElm = document.getElementById("output");
 
