@@ -6,7 +6,7 @@
     <style>.hidden{ display: none; }</style>
     <script defer>
         if (new URLSearchParams(location.search).has("error")) {
-            document.getElementById("error")?.style.display = "block";
+            document.getElementById("error").style.display = "block";
         }
         history.replaceState(null, "", "./index.html");
     </script>
