@@ -24,10 +24,10 @@ if (IsInvalid()) { document.location.href = "./index.html?error"; }
         平均タイプ数: ${average/60}回/秒 ／ ${average}回/分<br>
         ミスタイプ数: ${miss}回<br>
         ランキング: ${ranking == 10002?"表示なし":10001 - ranking}<br>
-        i コース: (i / 100) / ii 難易度: 練習1 普通2 正確重視3 速度必須4 一発勝負7 /<br>
-	    iii 損益: 損-iii 得+iii / iv 平均タイプ数: iv*60 (回/分) / v ミス数: そのまま /<br>
-	    vi 順位: 損-1 得10,001 - vi ( | ~ | は絶対値 )<br>
-        式) ${course}(i) * ${difficulty}(ii) * | (${average}(iv) - ${miss}(v)) + ${ranking}(vi) + ${profit}(iii) |`
+        ① コース: (① / 100) / ② 難易度: 練習1 普通2 正確重視3 速度必須4 一発勝負7 /<br>
+	    ③ 損益: 損-③ 得+③ / ④ 平均タイプ数: ④*60 (回/分) / ⑤ ミス数: そのまま /<br>
+	    ⑥ 順位: 損-1 得10,001 - ⑥ ( | ~ | は絶対値 )<br>
+        式) ${course}(①) * ${difficulty}(②) * | (${average}(④) - ${miss}(⑤)) + ${ranking}(⑥) + ${profit}(③) |`
         
     )
     resultElm.insertAdjacentText("beforeend", score.toLocaleString());
