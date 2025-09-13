@@ -15,7 +15,7 @@ const [course, difficulty, profit, average, miss, ranking] =
 
 const score = course * difficulty * Math.abs( (average - miss) + ranking + profit);
 if (IsInvalid()) { document.location.href = "./index.html?error"; }
-{
+else {
     history.replaceState(null, "", "./result.html")
     outputElm.insertAdjacentHTML("afterbegin",
         `コース: ${course==30?"お手軽3,000":(course==50?"お勧め5,000":"高級10,000")}円コース<br>
