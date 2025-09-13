@@ -27,6 +27,6 @@ function IsInvalid(){
     else if (10002 < ranking || 1 > ranking) {result = true;}
     else if (!/30|50|100/.test(course)) {result = true;}
     else if (!/1|2|3|4|7/.test(difficulty)) {result = true;}
-    else if (0 >= score)
+    else if (0 >= score) {result = true;}
     return result;
 }
