@@ -50,7 +50,8 @@
         </label>
         <div style="height: 100px;"></div>
         <a class="button" href="javascript:document.getElementById('inputform').submit()">送信</a>
-        <script defer>
+        
+        <script>
         if (new URLSearchParams(location.search).has("error")) {
             document.getElementById("error").style.display = "block";
         }
